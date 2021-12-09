@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Document</title>
+</head>
+<body class="font-mono bg-gray-50">
+    <!-- Wrapper -->
+    <div>
+        <!-- Navbar -->
+        <div class="py-3 px-2 md:py-8 md:px-8 top-0 bg-gray-50 text-black overflow-y-visible ml-7">
+            <nav>
+                <ul class="flex justify-around uppercase invisible md:visible">
+                    <li class="grow-5 mt-10 visible">
+                        <a class="uppercase font-bold text-3xl md:text-4xl text-yellow-400 shadow-md py-6 px-6 md:py-12 md:px-10 bg-gray-50" href="#">STIO</a></li>
+                    <li class="mt-3"><a href="#">Hjem</a></li>
+                    <li class="mt-3"><a href="#">Tjenster</a></li>
+                    <li class="mt-3"><a href="#">Priser</a></li>
+                    <li class="mt-3"><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main -->
+        <div>
+            <main>
+                <!-- Hero Section -->
+                <div id="hero" class="flex justify-center items-center w-full overflow-hidden">
+                    <div class="rounded-lg px-10 py-5">
+                    <h2 class="text-6xl md:text-7xl text-gray-50 font-bold uppercase">Søppel taxi I Oslo</h2>
+                    <h4 class="text-gray-50 text-lg">Beste Tjenster og priser for alle type søppel og husholdinger avfall.</h4>
+                    <div class="mt-10">
+                        <a class="btn-yellow transition duration-300 ease-out" href="#">Kom i gang</a></div>
+                    </div>
+                </div>
+
+                <!-- Services section -->
+                <div class="w-full">
+                    <header>
+                        <h1>Tjenster</h1>
+                    </header>
+                    <!-- Cards -->
+                    <div class="flex flex-col space-x-4 px-2 w-full h-screen">
+                        <!-- Cards goes here -->
+                        <div class="relative rounded-sm overflow-hidden  w-screen">
+                            <img class="absolute object-cover" src="{{url_for('static',filename='img/card1.jpg')}}" alt="">
+                            <span class="z-10">Fast delivery</span>
+                        </div>
+
+                        <div class="relative rounded-sm overflow-hiddel w-screen">
+                            <img class="absolute object-cover" src="{{url_for('static',filename='img/card2.jpg')}}" alt="">
+                            <span class="z-10">Fast delivery</span>
+                        </div>
+
+                        <div class="relative rounded-sm overflow-hidden w-screen">
+                            <img class="absolute object-cover" src="{{url_for('static',filename='img/card3.jpg')}}" alt="">
+                            <span class="z-10">Fast delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing section -->
+                <div class="w-full h-screen">
+                    <header>
+                        <h2>Priser</h2>
+                    </header>
+                    <!-- cards section -->
+                    <div>
+                        <!-- cards goes here -->
+                        <div>
+                            <img src="#" alt="">
+                            <span>399kr</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact -->
+                <div class="w-full h-screen">
+                    <!-- card -->
+                    <div>
+                        <img src="#" alt="">
+                        <span>Number is xxxxxxxx</span>
+                        <span>Email: taxi@something.no</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

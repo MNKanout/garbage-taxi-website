@@ -1,0 +1,46 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    #hero {
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/hero2.jpg);
+        background-size: cover;
+        background-blend-mode:darken;
+        height: calc(90vh - 40px);
+    }
+    .btn-yellow {
+        @apply py-3 px-6 uppercase rounded-sm lg:text-lg bg-yellow-400 lg:py-4 lg:px-8 hover:bg-yellow-200
+    }
+}
+
+/*  */
+
+@layer base {
+    .grow-2 {
+        flex-grow: 0.2;
+    }
+    .grow-3 {
+        flex-grow: 0.3;
+    }
+    .grow-4 {
+        flex-grow: 0.4;
+    }
+    .grow-5 {
+        flex-grow: 0.5;
+    }
+    .grow-6 {
+        flex-grow: 0.6;
+    }
+    .grow-7 {
+        flex-grow: 0.7;
+    }
+    .grow-8 {
+        flex-grow: 0.8;
+    }
+    .grow-9 {
+        flex-grow: 0.9;
+    }
+}
