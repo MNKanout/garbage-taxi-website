@@ -527,6 +527,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+/* Nav button */
+
+.ham-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -537,10 +570,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
-
-.invisible {
-  visibility: hidden;
 }
 
 .absolute {
@@ -620,6 +649,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -702,8 +735,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.justify-end {
-  justify-content: flex-end;
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -1097,8 +1130,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 3rem;
   }
 
+  .sm\:inline {
+    display: inline;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
   }
 
   .sm\:gap-x-8 {
@@ -1135,10 +1180,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:order-2 {
     order: 2;
   }

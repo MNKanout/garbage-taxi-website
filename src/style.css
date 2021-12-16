@@ -20,6 +20,36 @@
         @apply py-4 px-8 uppercase rounded-md lg:text-lg bg-yellow-400 lg:py-4 lg:px-8 
         hover:bg-yellow-200 shadow-yellow-400 shadow-sm 
     }
+    /* Nav button */
+    .ham-container {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      /* Rotate first bar */
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+      }
+      
+      /* Fade out the second bar */
+      .change .bar2 {
+        opacity: 0;
+      }
+      
+      /* Rotate last bar */
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+      }
 }
 
 /*  */
