@@ -1,3 +1,4 @@
+var navbar = document.getElementById('#nav-mobile');
 
 function scrollToSection(element) {
     var element = document.getElementById(element);
@@ -5,5 +6,6 @@ function scrollToSection(element) {
 }
 
 function NavToggle(x) {
+    navbar.classList.toggle('hidden')
     x.classList.toggle("change");
   }
