@@ -6,6 +6,7 @@ function scrollToSection(element) {
 }
 
 function NavToggle(x) {
-    navbar.classList.toggle('hidden')
+    navbar.classList.toggle('scale-0')
+    navbar.classList.toggle('scale-100');
     x.classList.toggle("change");
   }

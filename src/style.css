@@ -20,6 +20,10 @@
         @apply py-4 px-8 uppercase rounded-md lg:text-lg bg-yellow-400 lg:py-4 lg:px-8 
         hover:bg-yellow-200 shadow-yellow-400 shadow-sm 
     }
+    .nav-link {
+        @apply hover:bg-yellow-400 rounded-full hover:text-white px-4 py-2
+         cursor-pointer transition-colors ease-out duration-200
+    }
     /* Nav button */
     .ham-container {
         display: inline-block;

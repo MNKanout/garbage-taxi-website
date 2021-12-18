@@ -10,21 +10,21 @@
     <!-- Wrapper -->
     <div id="#main-container" class="max-w-7xl ">
         <!-- Navbar -->
-        <div class="py-5 px-2 md:py-8 md:px-4 shadow-md bg-white sticky top-0 z-10
-        text-black flex space-x-4 sm:justify-end justify-start items-center font-mono">
+        <div class="py-6 px-2 md:py-8 md:px-4 shadow-md bg-white sticky top-0 z-10
+        text-black flex sm:justify-end justify-start items-center font-mono">
             <div class="grow-9"><a id="logo" onclick="scrollToSection('#main-container')">STIO</a></div>
             <nav class="hidden sm:inline">
-                <ul class="flex justify-around uppercase space-x-10 px-3">
-                    <li>
-                        <a class="cursor-pointer" onclick="scrollToSection('#main-container')">Hjem</a>
+                <ul class="flex uppercase items-center space-x-10">
+                    <li class="nav-link">
+                        <a onclick="scrollToSection('#main-container')">Hjem</a>
                     </li>
-                    <li>
+                    <li class="nav-link">
                         <a class="cursor-pointer"  onclick="scrollToSection('#services')">Tjenster</a>
                     </li>
-                    <li>
+                    <li class="nav-link">
                         <a class="cursor-pointer" onclick="scrollToSection('#pricing')">Priser</a>
                     </li>
-                    <li>
+                    <li class="nav-link">
                         <a class="cursor-pointer" onclick="scrollToSection('#contact')">Kontakt</a>
                     </li>
                 </ul>
@@ -35,18 +35,18 @@
                 <div class="bar3"></div>
             </div>
             </div>
-            <div id="#nav-mobile" class="sm:hidden top-16 mt-3 transition ease-out hidden duration-300 z-10 bg-yellow-400 text-white text-xl px-3 fixed w-full uppercase py-5 font-mono">
+            <div id="#nav-mobile" class="scale-0 origin-top-right sm:hidden top-16 transition-all duration-300 ease-in-out z-10 bg-yellow-400 text-white text-xl px-3 py-7 mt-5 fixed w-full uppercase font-mono">
                 <ul class="flex flex-col place-items-center gap-3">
-                    <li>
+                    <li class="hover:scale-125 transition-all ease-in-out duration-200">
                         <a class="cursor-pointer" onclick="scrollToSection('#main-container')">Hjem</a>
                     </li>
-                    <li>
+                    <li class="hover:scale-125 transition-all ease-in-out duration-200">
                         <a class="cursor-pointer"  onclick="scrollToSection('#services')">Tjenster</a>
                     </li>
-                    <li>
+                    <li class="hover:scale-125 transition-all ease-in-out duration-200">
                         <a class="cursor-pointer" onclick="scrollToSection('#pricing')">Priser</a>
                     </li>
-                    <li>
+                    <li class="hover:scale-125 transition-all ease-in-out duration-200">
                         <a class="cursor-pointer" onclick="scrollToSection('#contact')">Kontakt</a>
                     </li>
                 </ul>
