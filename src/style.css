@@ -17,8 +17,8 @@
         height: calc(90vh - 40px);
     }
     .btn-yellow {
-        @apply py-4 px-8 uppercase rounded-md lg:text-lg bg-yellow-400 lg:py-4 lg:px-8 
-        hover:bg-yellow-200 shadow-yellow-400 shadow-sm transition duration-300 ease-out cursor-pointer
+        @apply py-4 px-8 uppercase rounded-xl lg:text-lg bg-yellow-400 lg:py-4 lg:px-8 
+         text-white hover:bg-yellow-500 shadow-sm shadow-yellow-400 border-yellow-400 transition duration-300 ease-out cursor-pointer
     }
     .nav-link {
         @apply hover:bg-yellow-400 rounded-full hover:text-white px-4 py-2
